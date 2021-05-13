@@ -6,6 +6,30 @@
 npm install --save babel-plugin-css-to-inline-styles
 ```
 
+### .babelrc
+
+```json
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "env": {
+    "test": {
+      "presets": [["@babel/preset-env"], "@babel/preset-react"]
+    }
+  },
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    ["babel-plugin-css-to-inline-styles"]
+  ]
+}
+```
 ## Example
 
 
