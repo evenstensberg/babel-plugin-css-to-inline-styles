@@ -1,0 +1,17 @@
+{
+  "name": "babel-plugin-css-to-inline-styles",
+  "version": "1.0.0",
+  "description": "Convert your css class to inline styles",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-generator": "^6.26.1",
+    "babel-template": "^6.26.0",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "babylon": "^6.18.0",
+    "css-to-js-nodejs": "^1.0.1"
+  }
+}
